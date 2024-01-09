@@ -1,0 +1,139 @@
+<!--Pure HTML code-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tower of Hanoi</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!--Bootstrap link - we need internet connection-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+
+  <!--Non - Functional Bottom part _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _-->
+
+  <!-- Title -->
+  <section id="title" class="gradient-background">
+
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif"
+            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" height="200" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Learn</h1>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Towers of Hanoi</h1>
+          <h3>(Scroll down)</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial -->
+  <section id="testimonial">
+    <div class="my-5">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h2 class="text-body-emphasis">"The Tower of Hanoi" is a mathematical game or puzzle consisting of three rods
+            and a number of disks of various diameters, which can slide onto any rod.
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class=" col-sm-12">
+              <p><strong>We must obey the following rules :</strong></p>
+            </div>
+            <br> <br> 
+            <div class=" col-sm-12">
+              <p><strong>1.</strong> Only one disk may be moved at a time.</p>
+            </div>
+            <div class=" col-sm-12">
+              <p><strong>2.</strong> Each move consists of taking the upper disk from one of the stacks and placing it on top of another
+                stack or on an empty rod.</p>
+            </div>
+            <div class=" col-sm-12">
+              <p><strong>3.</strong> No disk may be placed on top of a disk that is smaller than it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Body part -->
+  <section id="heading">
+    <div class="container">
+      <div class="heading-header p-3 pb-md-4 mx-auto text-center">
+        <h2 class="display-6 fw-medium">Demonstration of Towers of Hanoi</h2>
+      </div>
+    </div>
+  </section>
+
+  <!--Functional Bottom part _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _-->
+
+  <div class="container operal">
+
+    <!--Left side controling part _ _ _ _ _ -->
+    <div class="left-sidebar">
+      <div class="new-game">
+        <select name="discs" id="discSelect">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option> <!--Default will be 3-->
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <button id="newGameBtn">New Game</button>
+      </div>
+      <div class="speed">
+        <p>Speed</p>
+        <input type="range" id="speedRange" step="1" max="100" value="100">
+      </div>
+      <div class="buttons">
+        <button id="btnSolve">Solve</button>
+      </div>
+    </div>
+
+    <!--Stage and tower part _ _ _ _ _ -->
+    <div class="stage">
+
+      <div class="tower">
+        <div class="stem"></div>
+        <div class="plate"></div>
+      </div>
+
+      <div class="tower">
+        <div class="stem"></div>
+        <div class="plate"></div>
+      </div>
+
+      <div class="tower">
+        <div class="stem"></div>
+        <div class="plate"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Unofficial footer _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _-->
+
+  <section id="title" class="gradient-background">
+
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="heading-header p-3 pb-md-4 mx-auto text-center">
+        <h2 class="display-6 fw-medium operal_lite">Thank you</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <script src='index.js' type="module" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+.gradient-background {
+  background: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+  background-size: 100% 100%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+
+
+.operal{
+  padding: 80px 0px 130px 0px;
+}
+
+.operal_lite{
+  padding: 20px 0px 50px 0px;
+}
+
+.container {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px;
+  background: #265073;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-game {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-game select {
+  background: #2D9596;
+  color: #FFF;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.speed {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.speed p {
+  font-size: 12px;
+  font-weight: light;
+  color: #9AD0C2;
+}
+
+#speedRange {
+  width: 100%;
+  height: 3px;
+}
+
+button {
+  background: #2D9596;
+  border-radius: 9px;
+  border-style: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 5px 16px;
+  margin: 10px;
+}
+
+button:hover {
+  background: #9AD0C2;
+}
+
+.stage {
+  height: 180px;
+  background: #B9B4C7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tower {
+  width: 100px;
+  height: 160px;
+  background: #E0F4FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stem {
+  width: 7px;
+  height: 140px;
+  background: #000;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.plate {
+  width: 115px;
+  height: 10px;
+  background: #265073;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.disc {
+  height: 18px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.is-dragging {
+  opacity: 0.3;
+}
